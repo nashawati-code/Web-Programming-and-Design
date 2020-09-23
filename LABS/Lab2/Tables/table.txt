@@ -1,0 +1,26 @@
+
+Largest Towns in Switzerland
+Name
+Canton
+Population
+
+Zurich
+Zurich
+402,762
+	
+Winterthur 
+109,775 
+Geneva
+Geneva
+198,979
+Basel
+Basel-Stadt
+175,940
+
+Lausanne
+Vaud
+137,810
+
+Bern
+Bern
+133,115
