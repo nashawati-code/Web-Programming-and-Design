@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 1 - Problem 2</title>
+        <!-- ⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤ -->
+        <!-- CSS Section -->
+        <style type= "text/css">
+            body {
+              background-color: skyblue;
+            }
+            table, th, td {
+               border: 1px solid black;
+            }
+            fieldset {
+                border: 1px solid red;
+            }
+            red_color {
+                color: red;
+            }
+            blue_color {
+                color: blue;
+            }
+        </style>
+        <!-- ⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤ -->
+    </head>
+
+    <body>
+        <!-- ⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤ -->
+        <!-- Image and About Section -->
+        <img src="resources/logo.png" alt="AUB_logo">
+
+        <h2><red_color>About<red_color></h2>
+        <p>
+            Founded in 1866, the American University of Beirut bases its educational philosophy, standards, and practices on the American liberal arts model of higher education.
+            A teaching-centered research university, AUB has around <red_color><b>800 Instructional faculty</b></red_color> and a student body pf around <red_color><b>8,000 students.</b></red_color>
+            The University encourages freedom of thought and expression and seeks to graduate men and women committed to creative and critical thinking, life-long learning, personal intergity, civic responsivility, and leadership.
+            AUB's motto is <em><red_color>That They May Have Life And Have It More Abundantly.<red_color></em>
+        </p>
+        <!-- ⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤ -->
+        <!-- Academics Section with Lists -->
+        <h2><red_color>Academics<red_color></h2>
+        <p>
+            <ol>
+                <li>Faculities</li>
+                    <ul>
+                        <li><a href="https://www.aub.edu.lb/fafs/pages/default.aspx">FAFS</a></li>
+                        <li><a href="https://www.aub.edu.lb/fas/pages/default.aspx">FAS</a></li>
+                        <li><a href="https://www.aub.edu.lb/fhs/pages/default.aspx">FHS</a></li>
+                        <li><a href="https://www.aub.edu.lb/msfea/pages/default.aspx">MSFEA</a></li>
+                    </ul>
+                <li>Admissions</li>
+                    <ul>
+                        <li><a href="https://www.aub.edu.lb/admissions/Pages/default.aspx">Office of Admissions</a></li>
+                        <li><a href="https://www.aub.edu.lb/faid/Pages/default.aspx">Office of Financial Aid</a></li>
+                    </ul>
+            </ol>
+        </p>
+        <!-- ⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤ -->
+        <!-- Table Section -->
+        <h2><red_color>Topics Covered in CMPS278<red_color></h2>
+        <table>
+            <tr>
+                <td>Technology</td>
+                <td>Used For</td>
+            </tr>
+            <tr>
+                <td><blue_color>HTML5, CSS, JQuery, & Javascript</blue_color></td>
+                <td><red_color>Front-end Developer</red_color></td>
+            </tr>
+            <tr>
+                <td><blue_color>PHP & MySQL</blue_color></td>
+                <td><red_color>Back-end Developer</red_color></td>
+            </tr>
+        </table>
+        <!-- ⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤ -->
+        <!-- Forms Section -->
+        <h2><red_color>Tell Us More About You!<red_color></h2>
+        <form>
+            <!-- Name and Email Boxes -->
+            <label for="fname"><blue_color>Name:</blue_color></label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="email"><blue_color>Email:</blue_color></label>
+            <input type="text" id="lname" name="lname"><br>
+            <!-- Location Drop Down -->
+            <label for="location"><blue_color>Location:</blue_color></label>
+            <select name="location" id="location">
+                <option value="beirut">Beirut</option>
+                <option value="new_york">New York</option>
+            </select>
+            <!-- Gender Buttons -->
+            <br>
+            <fieldset>
+                <legend>Gender:</legend>
+                <label for="female"><blue_color>Female</blue_color></label>
+                <input type="radio" id="female" name="gender" value="female">
+                
+                <label for="male"><blue_color>Male</blue_color></label>
+                <input type="radio" id="male" name="gender" value="male"> 
+                <br>
+            </fieldset>
+            <!-- Background Text Area -->
+            <br>
+            <label for="background"><blue_color>Background:</blue_color></label><br>
+            <textarea id="background" name="background" rows="4" cols="50"></textarea>
+            <br>
+            <input type="submit" value="Send Info">
+        </form>
+        <!-- ⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤ -->
+        <!-- Navigation Links Section -->
+        <br>
+        <p>
+            <nav>
+                <a href="https://twitter.com/AUB_Lebanon?s=20">Twitter</a> | 
+                <a href="https://www.facebook.com/aub.edu.lb/">Facebook</a> |
+                <a href="https://www.linkedin.com/school/american-university-of-beirut">LinkedIn</a>
+            </nav>
+        </p>
+        <!-- ⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤⬤ -->
+    </body>
+</html>
