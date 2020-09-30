@@ -10,11 +10,7 @@
 ```
 ```diff
 ## Labs: 
-- text in red
-+ text in green
-! text in orange
-# text in gray
-+ [Basic Profile](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab1)
+ * [Basic Profile](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab1)
     - Use of routing.
     - Colspan and Rowspan tables.
     - Navigation links.
