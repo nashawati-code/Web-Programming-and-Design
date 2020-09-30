@@ -1,7 +1,8 @@
 # Web Programming and Design
 
 ## Labs: 
- * [Basic Profile](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab1)
+<font color="red">This is some text!</font>
+ * [**Basic Profile**](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab1)
     ```diff
     - Use of routing.
     - Colspan and Rowspan tables.
@@ -33,5 +34,5 @@
   - [Koala Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/PRACTICE/Koala%20Website)
     ```diff
     - Uses Linking (to a css file).
-    - Uses Layout Designs (semantic tags and structure)
+    - Uses Layout Designs (semantic tags and structure).
     ```
