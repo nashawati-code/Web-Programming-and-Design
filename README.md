@@ -33,5 +33,5 @@
   - [Koala Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/PRACTICE/Koala%20Website)
     ```diff
     - Uses Linking (to a css file).
-    - Uses Layout Designs (semantic tags and structure).
+    - Uses Layout Designs (semantic tags and structure)
     ```
