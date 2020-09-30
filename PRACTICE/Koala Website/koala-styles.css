@@ -1,0 +1,89 @@
+/* HTML5 Tags and CSS Basics CSS for the Original Koala Page */
+
+/* Example importing Google font family (remember to do this in CSS, not HTML) */
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap');
+
+body {
+  background-color: #AED581;
+  /* Using imported Google Font (remember the default font family!) */
+  font-family: Oxygen, sans-serif;
+  /* gives some padding inside the body to center its contents a bit more */
+  padding-left: 10px;
+  padding-right: 10px; 
+}
+
+/* The box model (margin, padding, border) 
+   and flex layout*/
+main {
+  display: flex;
+}
+
+p {
+  font-size: 14pt;
+}
+
+h2, footer {
+  text-align: center;
+}
+
+section {
+	background-color: #222222;
+  padding: 40px;
+}
+
+aside {
+	width: 40%;
+	padding: 10px;
+	margin-right: 10px;
+}
+
+article img {
+	height: 150px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+figure {
+  width: 70%;
+  /* one way to center block elements */
+  margin: auto auto; 
+}
+
+figure img {
+  /* To fix overflow of image width in its figure parent */
+  width: 100%;
+}
+
+figcaption {
+	text-align: right;
+  font-weight: bold;
+}
+
+header, article, aside, footer, p {
+	background-color: #E8E8E8; /* gray background */
+}
+
+section header, article, h1, p {
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* This uses a combinatorial selector to select headers DIRECTLY inside the body
+ * (selecting no the other headers) */
+body > header, footer {
+  line-height: 80px;
+}
+
+footer, h1, #scientific-name {
+  font-style: italic;
+}
+
+/*
+ * This is the only image with these properties, so it makes sensee to give it an ID. Make sure
+ * to avoid over-using classes and IDs when you can use other selectors instead.
+ */
+#down-under {
+  border: 2px solid black;
+  background-color: white;
+}
