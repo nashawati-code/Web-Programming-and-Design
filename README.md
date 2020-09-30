@@ -18,3 +18,8 @@
   - [Basic Greetings Page](https://github.com/aya-nashawati/Web-Programming-and-Design/blob/master/HOMEWORK/Homework1/p1.html)
     - Centers an image.
     - Uses mailto.
+    
+## Practice:
+  - [Koala Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/PRACTICE/Koala%20Website)
+    - Uses Linking (to a css file).
+    - Uses Layout Designs (semantic tags and structure).
