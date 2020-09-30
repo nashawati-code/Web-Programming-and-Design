@@ -1,15 +1,20 @@
 # Web Programming and Design
 
 ## Labs: 
-
-  - [AUB Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/HOMEWORK/Homework1)
-    - Basic use of colors and tables.
-    - Basic use of forms.
+  - [Basic Profile](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab1)
+    - Use of routing.
+    - Colspan and Rowspan tables.
+    - Navigation links.
   - [Tables](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab2/Tables)
     - Colspan and Rowspan tables.
   - [Switzerland Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab2/Switzerland)
-    - Use of inline styling.
+    - Extensive use of inline styling.
+    - Background images.
 
 ## Homework:
-
-  - 
+  - [AUB Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/HOMEWORK/Homework1/p2.html)
+    - Basic use of colors and tables.
+    - Basic use of forms.
+  - [Basic Greetings Page](https://github.com/aya-nashawati/Web-Programming-and-Design/blob/master/HOMEWORK/Homework1/p1.html)
+    - Centers an image.
+    - Uses mailto.
