@@ -1,6 +1,6 @@
 # Web Programming and Design
 
-## Labs: 
+> Labs: 
   - [Basic Profile](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab1)
     - Use of routing.
     - Colspan and Rowspan tables.
