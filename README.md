@@ -1,5 +1,5 @@
 # Web Programming and Design
-:shipit:
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
 ## Labs: 
   - [Basic Profile](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab1)
     - Use of routing.
