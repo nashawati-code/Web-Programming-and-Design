@@ -1,8 +1,7 @@
 # Web Programming and Design
 
 ## Labs: 
-<font color="red">This is some text!</font>
- * [**Basic Profile**](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab1)
+ * [Basic Profile](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab1)
     ```diff
     - Use of routing.
     - Colspan and Rowspan tables.
