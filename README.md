@@ -5,9 +5,7 @@
     - Basic use of forms.
   
 * Lab2:
-
-:arrow_right: [Tables](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab2/Tables)
-- Colspan and Rowspan tables.
-
-:arrow_right: [Switzerland Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab2/Switzerland)
-- Use of inline styling.
+  - [Tables](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab2/Tables)
+    - Colspan and Rowspan tables.
+  - [Switzerland Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab2/Switzerland)
+    - Use of inline styling.
