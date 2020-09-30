@@ -1,6 +1,5 @@
 # Web Programming and Design
 
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
 ```diff
 - text in red
 + text in green
@@ -8,18 +7,19 @@
 # text in gray
 @@ text in purple (and bold)@@
 ```
-```diff
 ## Labs: 
  * [Basic Profile](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab1)
+    ```diff
     - Use of routing.
     - Colspan and Rowspan tables.
     - Navigation links.
+    ```
   - [Tables](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab2/Tables)
     - Colspan and Rowspan tables.
   - [Switzerland Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab2/Switzerland)
     - Extensive use of inline styling.
     - Background images.
-```
+
 
 ## Homework:
   - [AUB Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/HOMEWORK/Homework1/p2.html)
