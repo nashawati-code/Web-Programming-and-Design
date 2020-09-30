@@ -1,6 +1,6 @@
 # Web-Programming-and-Design
 
-* Labs: 
+###### Labs: 
   - [AUB Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/HOMEWORK/Homework1)
     - Basic use of colors and tables.
     - Basic use of forms.
@@ -9,5 +9,5 @@
   - [Switzerland Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab2/Switzerland)
     - Use of inline styling.
 
-* Homework:
+###### Homework:
   - 
