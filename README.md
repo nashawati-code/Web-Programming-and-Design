@@ -1,6 +1,6 @@
 # Web-Programming-and-Design
 
-##Labs: 
+## Labs: 
 
   - [AUB Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/HOMEWORK/Homework1)
     - Basic use of colors and tables.
