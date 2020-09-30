@@ -1,4 +1,4 @@
-# Web-Programming-and-Design
+# Web Programming and Design
 
 ## Labs: 
 
