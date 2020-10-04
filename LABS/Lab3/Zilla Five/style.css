@@ -1,0 +1,81 @@
+/* ------------------------------------------ */
+/* HEADER */
+div#header{
+    background-color: #006699;  
+}
+h1{
+    color: lightgray;
+    margin-left: 10px;
+    margin-top: 0%;
+    font-size: 60px;
+}
+div#horiznav{
+    text-align: right;
+    margin-top: 0%;
+    padding-bottom: 50px;  
+}
+div#horiznav a{
+    text-decoration: none;
+    font-size: larger;
+    color: lightgray;
+    padding: 10px;
+}
+/* ------------------------------------------ */
+/* ASIDE */
+div#vertinav{
+    width: 250px;
+	padding: 10px;
+    background-color: lightgray;
+    float: left;
+}
+span.vertinavheader{
+    font-size: x-large;
+}
+div#vertinavcontent{
+    font-weight: lighter;
+    color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div#vertinavcontent a{
+    text-decoration: none;
+    color: black;
+}
+/* ------------------------------------------ */
+/* BODY */
+body{
+    font-family: Impact, sans-serif;
+    background-color: white;
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+ul a{
+    text-decoration: none;
+    color: #6f706d;
+    
+}
+h2{
+    color: #97a4a5;
+    margin-left: 50px;
+    margin-top: -30px;
+}
+h3{
+    color: #1266a4;
+    font-size: x-large;
+}
+p{
+    font-family: sans-serif;
+    margin: 4px;
+}
+div#content a{
+    text-decoration: none;
+    color: black;
+}
+div#content{
+    background-color: #e4e4e4;
+    margin-left: 270px;
+    padding: 1px;   
+}
+/* ------------------------------------------ */

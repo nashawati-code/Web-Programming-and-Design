@@ -1,0 +1,36 @@
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Skew</title>
+      <style type = "text/css">
+         div.box_skew {
+            width: 200px;
+            height: 100px;
+            background-color: lightgreen;
+            border-radius: 15px;
+            border: solid 3px darkgreen;
+            margin-left: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: x-large;
+            animation: skew 1s infinite;
+            animation-direction: alternate;
+         }        
+         @keyframes skew {
+            from {
+               transform: skewX(15deg);
+            }
+            to {
+               transform: skewX(-15deg);
+            }
+         }
+      </style>
+   </head>
+
+   <body>
+      <div class = "box_skew">
+         <div class = "textbox">Skewing Text</div>
+      </div>
+   </body>
+</html>
