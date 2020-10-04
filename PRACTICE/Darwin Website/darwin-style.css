@@ -1,0 +1,70 @@
+#header {
+    background-color: burlywood;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+body {
+    background-color: rgb(51, 49, 49);
+    font-family: Helvertica, Arial, Helvetica, sans-serif;
+}
+
+#container {
+    background-color: #eeeeee;
+    width: 800px;
+    /* To center everything on the page. */
+    /* This doesn't work vertically, only horizantally. */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content {
+    /* top, right, bottom, left */
+    padding: 10px 10px 10px 10px;  
+}
+
+/* The problem with divs is that they always end up on a new line.
+To stop this we make them float. */
+#nav {
+    background-color: lightgray;
+    height: 450px;
+    width: 150px;
+    float: left;
+    padding: 5px 2px 0px 5px;
+}
+
+#main {
+    width: 600px;
+    float: right;
+}
+
+#footer {
+    /* Since nav and main are floating, footer will overlap.
+    To prevent this, we use clear. */
+    clear: both;
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    text-align: right;
+}
+
+/* # for id . for class */
+#nav.selected {
+    font-weight: bold;
+}
+
+#nav ul {
+    list-style-type: disc;
+    /* To add some space on the left. */
+    padding: 5;
+}
+
+a {
+    text-decoration: none;
+    color: burlywood;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
