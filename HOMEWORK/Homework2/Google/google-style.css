@@ -1,0 +1,149 @@
+/* ================================== */
+/* RIGHT CORNER */
+#right-corner img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    float: right;
+    padding-bottom: 5px;
+    margin: 5px;
+    margin-right: 10px;
+}
+#right {
+    margin-top: 5px;
+    float: right;
+    padding: 10px;
+    font-family:'Segoe UI', Roboto, Oxygen,'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* ================================== */
+/* GOOGLE LOGO */
+#logo img {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 100px;
+    padding-top: 80px;
+    padding-bottom: 15px;
+}
+/* ================================== */
+/* SEARCH ENGINE AND IT'S IMAGES */
+#search_engine {
+    margin-bottom: 15px;
+}
+#border {
+    width: 500px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid lightgray;
+    box-shadow: 1px 1px #888888;
+    margin-left: auto;
+    margin-right: auto;
+}
+#border p {
+    margin-right: 10px;
+    margin-top: 10px;
+    font-family:'Segoe UI', Roboto, Oxygen,'Open Sans', 'Helvetica Neue', sans-serif;
+    color: darkslategrey;
+}
+#microphone img {
+    width: 20px;
+    height: 20px; 
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#magnifier img {
+    width: 25px;
+    height: 25px; 
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+/* ================================== */
+/* BUTTONS */
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+.flex-container > div {
+    background-color: lightgray;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+}
+/* ================================== */
+/* GOOGLE SUBTEXT */
+p {
+    font-family:'Segoe UI', Roboto, Oxygen,'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 10px;
+}
+blue {
+    color: blue;
+}
+#text {
+    margin-top: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+/* ================================== */
+/* FOOTER */
+#left {
+    float: left;
+    padding: 10px;
+    font-family:'Segoe UI', Roboto, Oxygen,'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#footer {
+    margin-top: 130px;
+    background-color: lightgray;
+    padding: 5px;
+    padding-bottom: 50px;
+}
+/* ================================== */
+/* ICONS */
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-top: 2%;
+    margin-left: 35%;
+    margin-right: 35%;
+    justify-content: center;
+}
+.icons img {
+    width: 50px;
+}
+.icons > div {
+    width: 70px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+    font-family:'Segoe UI', Roboto, Oxygen,'Open Sans', 'Helvetica Neue', sans-serif;
+    color: darkslategrey;
+}
+/* ================================== */
+/* CUSTOMIZE BUTTON */
+#customize {
+    width: 100px;
+    height: 20px;
+    float: right;
+    border-radius: 25px;
+    border: 2px solid lightgray;
+    box-shadow: 1px 1px #888888;
+    font-family:'Segoe UI', Roboto, Oxygen,'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(58, 58, 255);
+    padding: 5px;
+}
+#customize img {
+    width: 15px;
+    height: 15px;
+}
+#bottom-left {
+    margin-top: 3%;
+}
+/* ================================== */
