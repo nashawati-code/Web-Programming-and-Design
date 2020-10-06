@@ -29,9 +29,31 @@
     - Centers an image.
     - Uses mailto.
     ```
+  - [Google Replica](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/HOMEWORK/Homework2/Google)
+    ```diff
+    - Uses floats, flexboxes and inline elements.
+    - Uses overflow hidden.
+    ```
+    
 ## Practice:
   - [Koala Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/PRACTICE/Koala%20Website)
     ```diff
     - Uses Linking (to a css file).
     - Uses Layout Designs (semantic tags and structure).
+    ```
+ - [Spider-Man Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/PRACTICE/Spider-Man%20Website)
+    ```diff
+    - Uses text-align, text-shadow, text-decoration, list-style-type.
+    - Uses mailto and link: hover, visited.
+    - Uses multicolumns and table: colspan, rowspan.
+    - Uses basic animation, top and z-index.
+    - Uses background image: size, repeat, position, attachment.
+    - Uses float, clear, margin, padding, display: flex.
+    ```
+ - [Muay Thai Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/PRACTICE/Muay%20Thai%20Website)
+    ```diff
+    - Uses text-align and list-style-image.
+    - Uses multicolumns, column: count, gap, rule-style, width and transform: rotatem.
+    - Uses background-repeat and opacity.
+    - Uses float, clear, margin, padding, display: flex, position: fixed.
     ```
