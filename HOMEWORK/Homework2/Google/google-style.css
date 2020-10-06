@@ -107,16 +107,19 @@ blue {
 /* ================================== */
 /* ICONS */
 .icons {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    margin-top: 2%;
+    justify-content: center;
     margin-left: 35%;
     margin-right: 35%;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    overflow: hidden;
+    max-height: 240px;
 }
 .icons img {
     width: 50px;
+    border-radius: 50%;
+    background-color: lightgray;
 }
 .icons > div {
     width: 70px;
