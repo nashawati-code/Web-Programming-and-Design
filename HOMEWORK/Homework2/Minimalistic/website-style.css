@@ -1,0 +1,96 @@
+/* ================================== */
+/* BODY */
+body {
+    background-color: black;
+    color: white;
+}
+/* ================================== */
+/* TOP RIGHT NAV */
+#right-corner img {
+    width: 40px;
+    height: 30px;
+    float: right;
+    padding: 5px;
+    padding-right: 40px;
+    margin-top: 45px;
+    display: flex;
+}
+#right {
+    float: right;
+    padding: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin-top: 45px;
+    margin-bottom: 15%;
+}
+/* ================================== */
+/* HEADING CENTER TEXT */
+#center_top_text {
+    clear: both;
+    font-size: 30px;
+    font-style: italic;
+    color: white;
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: center;
+    text-align: center;
+}
+/* ================================== */
+/* MAIN CENTER TEXT */
+#center_main_text {
+    clear: both;
+    font-size: 60px;
+    color: white;
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: center;
+    text-align: center;
+}
+/* ================================== */
+/* DIAMOND AND INITIALS */
+.diamond {
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 70px;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    clear: both;
+    float: left;
+}
+.diamond p {
+    transform: rotate(-15deg);
+    color: white;
+    padding: 5px;
+}
+.diamond span {
+    transform: rotate(-45deg);
+    color: white;
+}
+/* ================================== */
+/* WATCH VIDEO BUTTON */
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+.flex-container > div {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 30px 50px 30px 50px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+}
+/* ================================== */
