@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <!-- ========================================================================================= -->
+    <head>
+        <title>Spider-Man Central</title>
+        <meta charset="UTF--8"/>
+        <link rel="icon" href="Images/favicon.png" type="image/gif" sizes="16x16">
+        <link href="spiderman-style.css" rel="stylesheet"/>
+    </head>
+    <!-- ========================================================================================= -->
+    <body>
+        <!-- ========================================================================================= -->
+        <header>
+            <h1>Welcome To Spider-Man Central</h1>
+            <h2>For All Things Spider-Man</h2>
+            <!-- ------------------------------ -->
+            <nav>
+                <a class="link" href="https://spidermannews.com/" class="header_navigation">News</a>
+                &nbsp;
+                <a class="link" href="https://marvel.com/" class="header_navigation">Marvel</a>
+            </nav>
+            <!-- ------------------------------ -->
+        </header>
+        <!-- ========================================================================================= -->
+        <aside>
+            <div id="vertinav">
+                <!-- ------------------------------ -->
+                <span class="vertinavheader">Superpowers</span>
+                <ul class="vertical_list">
+                    <li>Spider-Senses</li>
+                    <li>Wall-Crawling/Adhesive Stick</li>
+                    <li>Enhanced</li>
+                    <ol>
+                        <li>Strength</li>
+                        <li>Speed</li>
+                        <li>Reflexes and Agility</li>
+                        <li>Balance</li>
+                        <li>Healing Factor</li>
+                    </ol>
+                </ul>
+                <!-- ------------------------------ -->
+                <span class="vertinavheader">Peter Parker</span>
+                <figure>
+                    <img src="Images/peter_parker_comic.jpg" alt="comic">
+                    <figcaption>Peter Parker (Earth-TRN567)</figcaption>
+                </figure>
+                <!-- ------------------------------ -->
+                <div class = "box_skew">
+                    <div class = "textbox">Spider-Man is cool!</div>
+                </div>
+                <!-- ------------------------------ -->
+                <hr>
+            </div>
+        </aside>
+        <!-- ========================================================================================= -->
+        <main>
+            <!-- ------------------------------ -->
+            <div id="content">
+                <h3>Who is Spider-Man?</h3>
+                <div class = "multicolumns">
+                    <p>Bitten by a <red>radioactive spider</red>, Peter Parker’s arachnid abilities give him amazing powers that he uses to help others.</p>
+                    <p>With amazing spider-like abilities, this teenage science whiz <blue>fights crime</blue> and <blue>dreams of becoming an Avenger</blue> as Spider-Man.</p>
+                    <p>He was created by writer-editor Stan Lee and writer-artist Steve Ditko.</p>
+                    <p>He first appeared in the anthology comic book Amazing Fantasy #15 in the Silver Age of Comic Books.</p>
+                </div> <br>
+            </div> <br>   
+            <!-- ------------------------------ --> 
+            <div id="content">
+                <h3>Quotes</h3>
+                <blockquote>
+                    <ul>
+                        <li>We Save As Many As We Can To Make Up For The Ones We Couldn't. That's All We Do.</li>
+                        <li>With Great Power, Comes Great Responsibility.</li>
+                        <li>“I Know That Look. I Had It A Lot When I Was Your Age... There's No Stopping You. I Want You To Run Because You Don't Have Your Armor. But You Won't... 'Cause You're A Hero.”</li>
+                    </ul>
+                </blockquote>
+            </div> <br>
+            <!-- ------------------------------ -->
+            <div id="content">
+                <h3>Superheroes in New York</h3>
+                <table>
+                    <caption style="caption-side:bottom">Superheroes located in NYC</caption>
+                    <div id="table_row_top">
+                        <tr>
+                            <th>Status</th><th>Manhattan</th><th>Hell's Kitchen</th><th>Queens</th><th>Brooklyn</th>
+                        </tr>
+                    </div>
+                    <tr>
+                        <th style="background-color:lightcoral" rowspan="3">Hero</th>
+                        <th style="background-color:lightblue" colspan="3">Jessica Jones</th>
+                        <th> </th>
+                    </tr>
+                    <tr>
+                        <th> </th><th> </th><th> </th>
+                        <th style="background-color:lightblue">Captain America</th>
+                    </tr>
+                    <tr>
+                        <th> </th><th> </th><th> </th>
+                        <th style="background-color:lightblue">Miles Morales</th>
+                    </tr>
+                    <tr>
+                        <th style="background-color:lightslategray">Anti-Hero</th>
+                        <th style="background-color:lightblue" colspan="2">Punisher</th>
+                        <th> </th><th> </th>
+                    </tr>
+                </table> <br> <br>
+            </div> <br>
+            <!-- ------------------------------ -->          
+            <div id="form_section">
+                <!-- Forms Section -->
+                <h3>Tell Us More About You!</h3>
+                <form>
+                    <!-- Name and Email Boxes -->
+                    <label for="fname">Name:</label>
+                    <input type="text" id="fname" name="fname"> <br>
+                    <!-- Location Drop Down -->
+                    <label for="location">Location:</label>
+                    <select name="location" id="location">
+                        <option value="new_york">New York</option>
+                    </select> <br>
+                    <!-- Gender Buttons -->
+                    <fieldset>
+                        <legend>Gender:</legend>
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male"> 
+                        <label for="other">Other</label>
+                        <input type="radio" id="male" name="gender" value="other"> <br>
+                    </fieldset>
+                    <!-- Background Text Area -->
+                     <br>
+                    <label for="background">Background:</label> <br>
+                    <textarea id="background" name="background" rows="4" cols="50"></textarea>
+                     <br>
+                    <input type="submit" value="Send Info">                
+                </form>
+            </div> <br>
+            <!-- ------------------------------ -->    
+        </main>
+        <!-- ========================================================================================= -->
+        <br> <hr>
+        <footer>
+            <center>&copy; 2020 &nbsp; <a class="link" href="mailto:peterparker@dailybugle.com">Peter Parker's Email</a></center>
+        </footer>
+        <!-- ========================================================================================= -->
+    </body>
+</html>

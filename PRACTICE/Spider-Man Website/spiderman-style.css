@@ -1,0 +1,190 @@
+/* ================================== */
+/* background color of page */
+html {
+    background-color: lightcoral;
+}
+/* ================================== */
+/* header/background image */
+header {
+    background-image: url("Images/spiderman-silhouette.jpg");
+    border: 2px solid black;
+    padding: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    opacity: 80%;
+}
+nav {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: bottom;
+    text-decoration: none;
+    border:2px; 
+    border-style:dashed; 
+    border-color:black; 
+    background-color: #1266a4;
+    padding: 5px;
+    float: right;
+}
+/* ================================== */
+/* shared attributes accross page */
+h1 {
+    color: darkslategray;
+    text-align: left;
+    vertical-align: bottom;
+}
+h2 {
+    text-decoration: underline overline;
+    text-align: left;
+    vertical-align: bottom; 
+}
+h3{
+    text-shadow: 2px 2px #1266a4;
+    margin: 10px;
+}
+hr {
+    border-color: black;
+}
+p{
+    font-family: sans-serif;
+    margin: 10px;
+}
+/* ================================== */
+/*multicolumns and section 1*/
+div.multicolumns {
+    column-count: 4;
+    column-gap: 5px;
+    column-rule: dotted 1px;
+}
+blue {
+    color: darkblue;
+    font-style: italic;
+    font-weight: bold;
+}
+red {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* ================================== */
+/* table and section 3 */
+table, th, td {
+    border: 1px solid black;
+}
+
+div#table_row_top {
+    background-color:lightcoral;
+}
+/* ================================== */
+/* ASIDE */
+div#vertinav{
+    width: 200px;
+    padding: 10px;
+    background-color: lightblue;
+    margin-right: 30px;
+    float: left;
+    clear: both;
+    padding-bottom: 20px;
+} 
+ul.vertical_list:nth-child(even) {
+    color:#1266a4;
+}
+span.vertinavheader{
+    text-shadow: 2px 2px lightcoral;
+    font-size: 20px;
+    font-family: fantasy;
+    margin-left: auto;
+}
+ul{
+    list-style-type: square;
+    margin: 20px;
+    padding: 0px;
+    margin-right: 20px;
+    padding-bottom: 0px;
+}
+img {
+    width:75%;
+    margin: 10px;
+    margin-right: 20px;
+    background-attachment: fixed;
+    clear: right;
+}
+figcaption {
+    font-size: 10px;
+    font-style: italic;
+}
+/* ================================== */
+/* animation */
+div.box_skew {
+    width: 150px;
+    height: 50px;
+    background-color: #1266a4;
+    border-radius: 15px;
+    border: ridge 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+    animation: skew 1s infinite;
+    animation-direction: alternate;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index:0;
+}   
+@keyframes skew {
+    from {
+        transform: skewX(15deg);
+    }
+    to {
+        transform: skewX(-15deg);
+    }
+}
+/* ================================== */
+/* BODY */
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightcoral;
+}
+div#content{
+    background-color: #e4e4e4;
+    margin-left: 17.5%;
+    padding: 1px;   
+}
+/* ================================== */
+/* form */
+div#form_section{
+    width: 100%;
+    float:left;
+    background-color: lightgray;
+    padding: 1px; 
+}
+form {
+    padding: 10px;  
+}
+div.form_image{
+    float: right;
+    max-width: 500px;
+    display: flex;
+}
+/* ================================== */
+/* FOOTER and links */
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #1266a4;
+    text-decoration: none;
+}
+.link:hover {
+    color: lightcoral;
+}
+.link:visited {
+    color: white;
+}
+/* ================================== */
