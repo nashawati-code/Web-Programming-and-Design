@@ -1,0 +1,132 @@
+/* ========================== */
+/* COMMON */
+html {
+    background-image: url("Images/gloves.jpg");
+    background-repeat: repeat;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+    column-span: all;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 30px 50px 30px 50px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+}
+/* ========================== */
+/* FIXED HEADER */
+#center {
+    background-color: black;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+/* ========================== */
+/* HEADER AND DIAMOND */
+header {
+    background-color: black;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+}
+.diamond {
+    border: 2px solid white;
+    padding: 10px;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    clear: both;
+    margin-bottom: 30px;
+}
+.diamond p {
+    transform: rotate(-15deg);
+    color: white;
+    padding: 5px;
+}
+.diamond span {
+    transform: rotate(-45deg);
+    color: white;
+}
+/* ========================== */
+/* LEFT COLUMN */
+#left-column {
+    float: left;
+    background-color: white;
+    margin-top: 10%;
+    opacity: 80%;
+    margin: 2%;
+    width: 40%;
+    height: fit-content;
+    padding: 10px;
+    border: 2px solid black;
+}
+#left-column p {
+    color: black;
+    padding: 5px;
+}
+/* ========================== */
+/* RIGHT COLUMN */
+#right-column {
+    float: right;
+    background-color: white;
+    margin-top: 10%;
+    opacity: 80%;
+    margin: 2%;
+    width: 40%;
+    height: fit-content;
+    padding: 10px;
+    border: 2px solid black;
+}
+#right-column p {
+    color: black;
+    padding: 5px;
+}
+#right-column li {
+    list-style-image: url('Images/rsz_bullet.png');
+    position: relative;
+    line-height: 0;
+}
+/* ========================== */
+/* MULTIPLE COLUMNS */
+#below_article {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 80%;
+    height: fit-content;
+    padding: 10px;
+    border: 2px solid black;
+    clear: both;
+    column-count: 4;
+    column-gap: 20px;
+    column-rule-style: solid;
+    column-width: 20px;
+}
+#below_article li {
+    color: black;
+    padding: 5px;
+}
+/* ========================== */
