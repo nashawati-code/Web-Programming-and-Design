@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- ========================================= -->
+        <style>
+            fieldset {
+                width: fit-content;
+                padding: 10px;
+            }
+        </style>
+        <!-- ========================================= -->
+        <script type="text/javascript">
+            function letter_in_longest_word()
+            {    
+                var str = document.getElementById('text').value; //str will now be the home of the whatevers written in "text"
+                var strsplit = str.split(" "); //seperates the text of "text" by a space, each word will now be its own element in an array
+                var longestWord = 0; //the var that we will increment will be initially set to 0
+                for (var i = 0; i < strsplit.length; i++) //the for loop will loop for the number of words, if there are 6 words it will loop 6 times
+                {
+                    console.log(strsplit.length); //will show the amount of words in the text
+                    //if the length of a world is greater than the previously found longestWord then update it to be the new longestWord
+                    if (strsplit[i].length > longestWord)
+                    { 
+	                    longestWord = strsplit[i].length;
+                    }
+                }
+                document.getElementById("result").innerText = longestWord;
+                // Example: "hi my name is Brendon" longest word is Brendon, which has the length of 7
+            }
+        </script>
+    </head>
+    <body>
+        <!-- ========================================= -->
+        <fieldset id="Form_Sign_Up">
+            <legend>Longest Word Counter</legend>
+            <h3>Input Text Below:</h3>
+            <form action=" javascript:void(0)" onclick="letter_in_longest_word();">
+                <textarea id="text" name="text" rows="4" cols="50"></textarea>
+                <br>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+            <p>The longest word is this many letters: </p>
+            <p id="result"></p>
+        </fieldset>
+        <!-- ========================================= -->
+    </body>
+</html>

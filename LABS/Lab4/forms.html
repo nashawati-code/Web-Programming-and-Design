@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- ========================================= -->
+        <style type="text/css">
+            fieldset{
+                width: 500px;
+            }
+            #Form_Search_Query{
+                margin-bottom: 40px;
+            }
+            #sign_up{
+                width: 100%;
+            }
+            input[type="radio"] {
+                background-color: black;
+            }
+            #Form_Sign_Up div{
+                margin-bottom: 10px;
+            }
+            #Form_Sign_Up label.info{
+                float: left;
+                width: 150px;
+            }
+        </style>
+        <!-- ========================================= -->
+    </head>
+    <body>
+        <!-- ========================================= -->
+        <!-- 
+            GET Content
+            array(0) { }
+            POST Content
+            array(1) { ["Search"]=> string(6) "Search" }
+         -->
+        <form action="https://api.xbeirut.com/278/lab6/display_c.php" method="POST">
+            <fieldset id="Form_Search_Query">
+                <legend>Search Query</legend>
+                <label for="text">Enter Text</label>
+                <input type="text" title="text"> 
+                <input type="submit" id="Search" name="Search" value="Search">
+            </fieldset>
+        </form>
+        <!-- ========================================= -->
+        <!-- 
+            GET Content
+            array(0) { }
+            POST Content
+            array(6) { ["fname"]=> string(3) "Aya" 
+                       ["lname"]=> string(9) "Nashawati" 
+                       ["my-email"]=> string(18) "amn26@mail.aub.edu" 
+                       ["my-pass"]=> string(3) "123" 
+                       ["cnf-pass"]=> string(3) "123" 
+                       ["major"]=> string(4) "CMPS" }
+         -->
+        <form action="https://api.xbeirut.com/278/lab6/display_c.php" method="POST">
+            <fieldset id="Form_Sign_Up">
+                <legend>Sign Up</legend>
+                    <div>
+                        <label for="fname" class="info">First Name:</label> 
+                        <input type="text" name="fname"> <!-- ["fname"]=> string(3) "Aya" -->
+                    </div>
+                    <div>
+                        <label for="lname" class="info">Last Name:</label>
+                        <input type="text" name="lname"> <!-- ["lname"]=> string(9) "Nashawati" -->
+                    </div>
+                    <div>
+                        <label for="my-email" class="info">Email:</label>
+                        <input type="text" name="my-email"> <!-- ["my-email"]=> string(18) "amn26@mail.aub.edu"  -->
+                    </div>
+                    <div> 
+                        <label for="my-pass" class="info">Password:</label>
+                        <input type="text" name="my-pass"> <!-- ["my-pass"]=> string(3) "123"  -->
+                    </div>
+                    <div>
+                        <label for="cnf-pass" class="info">Confirm Password:</label>
+                        <input type="text" name="cnf-pass"> <!-- ["cnf-pass"]=> string(3) "123"  -->
+                    </div>
+                    <!-- ----------------------------------- -->
+                    <div>
+                        <label for="major" class="info">Major:</label>
+                        <input type="radio" id="CMPS" name="major" value="CMPS"/> CMPS <!-- ["major"]=> string(4) "CMPS" -->
+                        <input type="radio" id="Engineering" name="major" value="Engineering"/> Engineering
+                        <input type="radio" id="Other" name="major" value="Other"/> Other
+                    </div>
+                    <!-- ----------------------------------- -->
+                <input type="submit" id="sign_up" value="Sign Up">
+            </fieldset>
+        </form>
+        <!-- ========================================= -->
+    </body>
+</html>
+
+<!-- 
+    <form action="https://api.xbeirut.com/278/lab6/post_requests.php" method="POST"> 
+    This is a POST request, you are not supposed to see the content of the request. 
+    Your password starts with: [whatever my password is]
+-->
+
+<!-- 
+    We use POST since it's not secure to send any password using the GET method.
+-->

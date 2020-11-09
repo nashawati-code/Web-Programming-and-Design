@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- ========================================= -->
+        <style>
+            fieldset {
+                width: fit-content;
+                padding: 10px;
+            }
+        </style>
+        <!-- ========================================= -->
+        <script>
+            function calculator()
+            {
+                var number1 = Number(document.getElementById('number1').value); //gets the value of the input with the id "number1", it's a number
+                var number2 = Number(document.getElementById('number2').value); //gets the value of the input with the id "number2", it's a number
+                var oper = document.getElementById('operators').value; //gets the value of the input with the id "operators"
+                /*
+                depending on the operation:
+                    each will output a unique result with id "result"
+                    the result will then be passes to document.getElementById("comment").innerText where it will be added into a string with other variables
+                    .innerText --> allows the text we want to say to stay on the same page
+                */
+                // ------------------------------------- \\
+                if(oper === '+'){
+                    document.getElementById('result').value = number1+number2;
+                    document.getElementById("comment").innerText = number1 + "+" + number2 + "=" + result.value;
+                }
+                // ------------------------------------- \\
+                if(oper === '-'){
+                    document.getElementById('result').value = number1-number2;
+                    document.getElementById("comment").innerText = number1 + "-" + number2 + "=" + result.value;
+                }
+                // ------------------------------------- \\
+                if(oper === '/'){
+                    document.getElementById('result').value = number1/number2;
+                    document.getElementById("comment").innerText = number1 + "/" + number2 + "=" + result.value;
+                }
+                // ------------------------------------- \\
+                if(oper === '*'){
+                    document.getElementById('result').value = number1*number2;
+                    document.getElementById("comment").innerText = number1 + "*" + number2 + "=" + result.value;
+                } 
+                // ------------------------------------- \\
+                //the not operator is --> !===
+                //the equivalent operator is --> ===
+                if(oper !== "+" && oper !== "-" && oper !== "/" && oper !== "*") {
+                    document.getElementById("comment").innerText = "Invalid operation.";
+                } 
+            }
+        </script>
+    </head>
+    <body>
+        <!-- ========================================= -->
+        <fieldset>
+            <legend>Calculator</legend>
+            <!-- ----------------------------------- -->
+            <label for="head">Number1:</label>
+            <input type="text" id="number1"/><br/><br/> <!-- the input of the user with have id of "number1" -->
+            <label for="head">Operator:</label>
+            <input type="text" id="operators"/><br/><br/> <!-- the input of the user with have id of "operators" -->
+            <label for="head">Number2:</label>
+            <input type="text" id="number2"/><br/><br/> <!-- the input of the user with have id of "number2" -->
+            <!-- ----------------------------------- -->
+            <button onclick="calculator();">Submit</button>
+            <input type="text" id="result"/>
+            <h1>Your Answer Is: <span id="comment"> </span></h1> <!-- this is where the results will show, it has id "comment" -->
+        </fieldset>
+        <!-- ========================================= -->
+    </body>
+</html>

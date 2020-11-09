@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- ========================================= -->
+        <style>
+            fieldset {
+                width: fit-content;
+                padding: 10px;
+            }
+        </style>
+        <!-- ========================================= -->
+        <script type="text/javascript">
+            function bmi () {
+                var height = Number(document.getElementById("height").value); //gets the value of the input with the id "weight", it's a number
+                var weight = Number(document.getElementById("weight").value); //gets the value of the input with the id "height", it's a number
+                var result = 703*weight/(height*height);
+                document.getElementById("result").innerHTML = "Your BMI is: " + result; //outputs a string with the result calculated above in the paragraph with id "result"
+            }
+        </script>
+        <!-- ========================================= -->
+        </head>
+        <body>
+            <!-- ========================================= -->
+            <fieldset>
+            <legend>BMI Calculator</legend>
+                <form>
+                    <label for="head">Weight(pounds):</label>
+                    <input type="text" id="weight"/><br/><br/>  <!-- input field with id "weight" -->
+
+                    <label for="head">Height(inches):</label>
+                    <input type="text" id="height"/><br/><br/> <!-- input field with id "height" -->
+                
+                    <input class = "submit" type="button"  value="Submit" onclick="bmi()" />
+                    <p id="result">Here will be your result</p> <!-- the results will be outputed here in the paragraph with id "result" -->
+                </form>
+            </fieldset>
+            <!-- ========================================= -->
+        </body>
+</html>

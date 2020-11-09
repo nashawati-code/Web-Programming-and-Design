@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- ========================================= -->
+        <style>
+            fieldset {
+                width: fit-content;
+                padding: 10px;
+            }
+        </style>
+        <!-- ========================================= -->
+        <script>
+            // ------------------------------------- \\
+            function delete_text()
+            {
+                //.value="" will overwrite whatever was written in the textarea with id "example_text" by making it empty
+                document.getElementById("example_text").value = "";
+            }
+            // ------------------------------------- \\
+            function capitalize() 
+            {
+                //.textTransform="uppercase" will turn the text of "example_text" all uppercased
+                //.textTransform="lowercase" would turn it into lowercase
+                document.getElementById("example_text").style.textTransform = "uppercase"; 
+            }
+            // ------------------------------------- \\
+            function reverse() 
+            {
+                var str = document.getElementById('example_text').value; //str will now be the home of the whatevers written in "example_text"
+                var split = str.split(" "); //seperates the text of "example_text" by a space, each word will now be its own element in an array
+                split.reverse(); //reverses the new array, "this is a test" becomes "test,a,is,this"
+                document.getElementById("example_text").value = split; //ouputs the newly reversed list in textarea of id "example_test"
+            }
+            // ------------------------------------- \\
+            function sort()
+            {
+                var str = document.getElementById('example_text').value;
+                var split = str.split(" ");
+                split.sort(); //will sort each element of the array according to similar ASCIIs
+                //example "apple 19 2 help hello 1 banana" becomes "1,19,2,apple,banana,hello,help"
+                document.getElementById("example_text").value = split; //ouputs the newly sorted list in textarea of id "example_test"
+            }
+            // ------------------------------------- \\
+            function addlinenumbers() 
+            {
+                //seperates elements according to a line break
+                //the make takes each line and associates it with an index, each new line will print an incremenet of the previous line
+                var lineNumber = document.getElementById('example_text').value.split('\n').map((line, index) => `${index + 1} ${line}`).join('\n');
+                document.getElementById("example_text").value = lineNumber;
+                /*  Example:
+                    We transform each element into its length:
+                    let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
+                    alert(lengths); // 5,7,6
+                */
+            }
+            // ------------------------------------- \\
+        </script>
+    </head>
+    <body>
+        <!-- ========================================= -->
+        <fieldset>
+            <legend>Buttons</legend>
+            <textarea id="example_text" rows="4" cols="50"></textarea><br> <!-- textarea where the original input will go -->
+            <button onclick="capitalize()">Capitalize</button>
+            <button onclick="delete_text()">Delete</button>
+            <button onclick="reverse()">Reverse</button>
+            <button onclick="sort()">Sort</button>
+            <button onclick="addlinenumbers()">Add Line Numbers</button>
+            <p id="output"></p>
+        </fieldset>
+        <!-- ========================================= -->
+    </body>
+</html>
