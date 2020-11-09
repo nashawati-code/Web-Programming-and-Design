@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem 1</title>
+        <!-- --------------------------------- -->
+        <script src="problem1.js"></script>
+        <!-- --------------------------------- -->
+        <style>
+            #contain {
+                width: fit-content;
+                padding: 5px;     
+                text-align: center;   
+                padding: 10px;
+            }
+            #grades {
+                margin-right:0;
+                text-align: left;
+                width: fit-content;
+                padding: 10px;
+            }
+            legend {
+                text-align: left;
+                font-weight: bold;
+            }
+            table, td, td {
+                border: 1px solid black;
+            }
+            #comment, #validity {
+                max-width: 350px;
+                min-width: 350px;
+                min-height: 30px;
+                text-align: center;
+            }
+        </style>
+        <!-- --------------------------------- -->
+    </head>
+    <body>
+        <hr>
+        <!-- ======================================================================================== -->
+        <h2>Form 1</h2>
+        <fieldset id="contain" style="background-color: rgb(199, 245, 205);">
+            <legend>Leap Year</legend>
+            <form>
+                <label for="head">Year:</label>
+                <input id="year" type="text">
+            </form>
+            <br><button onclick="isLeapYear()">Check Year</button><br><br>
+            <textarea id="result" rows="5" cols="40" style="min-width: 200px; max-width: 200px"></textarea>
+        </fieldset>
+        <!-- ======================================================================================== -->
+        <hr>
+        <h2>Form 2</h2>
+        <fieldset id="contain" style="background-color: rgb(199, 232, 245);">
+            <legend>Card Validate</legend>
+            <form>
+                <label for="head">Card Number:</label>
+                <input id="with_dashes" type="text" placeholder="dddd-dddd-dddd-dddd">
+            </form>
+            <br><button onclick="validateCardNumber()">Validate</button><br><br>
+            <textarea id="validity" rows="2" cols="50" placeholder="checks validity"></textarea><br>
+            <textarea id="comment" rows="2" cols="50" placeholder="shows error"></textarea>
+        </fieldset>
+        <!-- ======================================================================================== -->
+        <hr>
+        <h2>Form 3</h2>
+        <!-- action="javascript:void(0)" prevents page reloads -->
+        <!-- onchange="calculate();" causes the form to automatically update when changed occur -->
+        <form action="javascript:void(0)" onchange="calculate();">
+            <table>
+                <tr>
+                    <td>Assignments</td>
+                    <td>10%</td>
+                    <td><input id="asst" type="text" style="width: fit-content" minlength="7" maxlength="23"></td> 
+                </tr>
+                <tr>
+                    <td>Project</td>
+                    <td>15%</td>
+                    <td><input id="proj" type="text" style="width: fit-content"></td> 
+                </tr>
+                <tr>
+                    <td>Quizzes</td>
+                    <td>15% 25% 30%</td>
+                    <td><input id="quiz" type="text" style="width: fit-content" maxlength="11"></td>
+                </tr>
+                <tr>
+                    <td>Attendance</td>
+                    <td>5%</td>
+                    <td><input id="attend" type="text" style="width: fit-content"></td> 
+                </tr>
+            </table>
+            <br>
+        </form>
+        <fieldset id="grades">
+            <span>Course Average: <input type="text" id="course_average" style="width: 200px"/></span><br><br>
+            <span>Raised Average: <input type="text" id="raised_average" style="width: 200px"/></span><br><br>
+            <span>Assignment Average: <input type="text" id="asst_average" style="width: 220px"/></span><br><br>
+            <span>Quiz Average: <input type="text" id="quiz_average" style="width: 200px"/></span><br><br>
+            <span>Final Average: <input type="text" id="weighted_grade" style="width: 200px"/></span>
+        </fieldset>
+        <hr>
+        <!-- ======================================================================================== -->
+    </body>
+</html>

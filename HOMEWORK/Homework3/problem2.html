@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem 2</title>
+        <style>
+            img {
+                width: 120px;
+            }
+        </style>
+        <!-- ================================================================================ -->
+        <script>
+            function hideFood(){
+                //the user searched for a food they want to delete, this field had the id "foodname", it will be changed to lowercase
+                var foodname = document.getElementById("foodname").value.toLowerCase();
+
+                //after writing the name, the user will select an option from the dropdown which has the id "foodgroup"
+                var foodgroup = document.getElementById("foodgroup").value;
+
+                //document.getElementsByName(foodname) --> compares the name the user inputed to the name attribute of the img
+                var food = document.getElementsByName(foodname);
+
+                //we include a for loop so we can search multiple times
+                for(var i=0; i<food.length; i++)
+                {
+                    //if the food img attribute matches the selected foodgroup from the dropdown
+                    // food[i].tagName == "IMG" --> makes sure the food the user searched for is of type image
+                    //note the returned tagName is uppercase
+                    if(food[i].alt == foodgroup && food[i].tagName == "IMG")
+                    {
+                        food[i].style.visibility = "hidden"; //hides the searched food
+                    }
+                    // food[i].style.visibility = "hidden"; --> hides the searched food
+                    // food[i].style.visibility = "visible"; --> shows the searched food
+                }
+            }
+        </script>
+        <!-- ================================================================================ -->
+    </head>
+    <body>
+        <!-- action="javascript:void(0)" prevents page reloads -->
+        <div action="javascript:void(0)">
+            <!-- input field with the id "foodname", this is where the user will search for the food they want to remove -->
+            Name of Food: <input id="foodname" type="text" />
+            Food Group:
+            <!-- this is a dropdown, each food is part of one of these groups -->
+            <select id="foodgroup">
+                <option>fats</option>
+                <option>fruit</option>
+                <option>dairy</option>
+                <option>meat</option>
+                <option>veggies</option>
+            </select>
+            <button id="eat" onclick="hideFood()">Eat!</button> <!-- calls the hideFood() function -->
+        </div>
+        <!-- each image has its own unique name (name), however some may share the same food group (alt) -->
+        <p>
+            <img src="Images/cookie.jpg" name="cookie" alt="fats" />
+            <img src="Images/apple.jpg" name="apple" alt="fruit" />
+            <img src="Images/broccoli.jpg" name="broccoli" alt="veggies" />
+            <img src="Images/tomato.jpg" name="tomato" alt="fruit" />
+            <img src="Images/drumstick.jpg" name="steak" alt="meat" />
+            <img src="Images/milkjug.jpg" name="milk" alt="dairy" />
+            <img src="Images/potatochips.jpg" name="chips" alt="fats" />
+        </p>    
+    </body>
+</html>
