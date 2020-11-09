@@ -16,6 +16,7 @@
     - Extensive use of inline styling.
     - Background images.
     ```
+   - [Javascript Basics](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab3)
 
 
 ## Homework:
