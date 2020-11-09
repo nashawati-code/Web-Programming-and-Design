@@ -38,7 +38,7 @@
     - Uses floats, flexboxes and inline elements.
     - Uses overflow hidden.
     ```
-  - [Javascript Basics (detailed)](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/HOMEWORK/Homework2/Google)
+  - [Javascript Basics (detailed)](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/HOMEWORK/Homework3)
 
 ## Practice:
   - [Koala Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/PRACTICE/Koala%20Website)
