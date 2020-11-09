@@ -19,7 +19,7 @@
    - [Using Flex and Float](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab3)
    - [Javascript Basics](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab4)
    - [Roadster Diner](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab5)
-   - [DOM Manipulation: Add, Edit, Delete](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab5)
+   - [DOM Manipulation: Add, Edit, Delete](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab6)
 
 
 ## Homework:
