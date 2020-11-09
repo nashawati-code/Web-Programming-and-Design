@@ -16,7 +16,10 @@
     - Extensive use of inline styling.
     - Background images.
     ```
-   - [Javascript Basics](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab3)
+   - [Using Flex and Float](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab3)
+   - [Javascript Basics](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab4)
+   - [Roadster Diner](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab5)
+   - [DOM Manipulation: Add, Edit, Delete](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab5)
 
 
 ## Homework:
@@ -35,7 +38,8 @@
     - Uses floats, flexboxes and inline elements.
     - Uses overflow hidden.
     ```
-    
+  - [Javascript Basics (detailed)](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/HOMEWORK/Homework2/Google)
+
 ## Practice:
   - [Koala Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/PRACTICE/Koala%20Website)
     ```diff
