@@ -1,0 +1,20 @@
+body {
+    font: Georgia, serif;
+    font-size: 12pt;
+}
+
+td {
+    height: 250px;
+    vertical-align: bottom;
+}
+
+.bar {
+    width: 50px; /*The bar's width is exactly 50px.*/
+    background-color: #FFBBBB;
+    text-align: center;
+    font-weight: bold;
+}
+
+.makered {
+    color: red;
+}
