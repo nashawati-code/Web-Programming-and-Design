@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 1 - YouTube</title>
+    <script src="youtube.js"></script>
+</head>
+
+<body onload = loadVideos()>
+    <div id="title"></div>
+    <!-- <h1>availableVideos</h1> to show the artist's name "availableVideos" on the top of the page -->
+    <div id="page"></div>
+    <div id="youtube"></div>
+    <!-- ===================================================================================================================================== -->
+    <script>
+        function loadVideos(){
+            var JSONfiles = ["videos.json","animals.json"];
+            for(var group in JSONfiles) {
+                // ------------------------------------------------ //
+                var ourRequest = new XMLHttpRequest();
+                ourRequest.open('GET', JSONfiles[group], true);
+                console.log(ourRequest); //loads the XMLHttpRequest on console 
+                // XMLHttpRequest {onreadystatechange: null, readyState: 1, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}
+                // ------------------------------------------------ //
+                ourRequest.onload = function()
+                {
+                    if(this.status == 200){
+                        var videos = JSON.parse(this.responseText);
+                        var name = document.createElement("h1");
+                        name.innerHTML = videos.name;
+                        var divTitle = document.getElementById("title");
+                        divTitle.appendChild(name);
+                        document.body.appendChild(name);
+                        var songList = document.createElement("div"); //songList will have its own div (for everything)
+                        var output = document.createElement("ul"); //output will have its own ul (for the songTitle and songThumbnail)
+                        // ------------------------------------------------ //
+                        for(var i in videos.availableVideos){
+                            var li = document.createElement("li");
+                            // ------------------------------------------------ //
+                            //places the Title array from the JSON file into an p element
+                            var songTitle = document.createElement("p");
+                            songTitle.innerHTML = videos.availableVideos[i].clipTitle;
+                            // ------------------------------------------------ //
+                            // generates a Thumbnail image using the songs ID, each Thumbnail shows a Title (also from JSON)
+                            var songThumbnail = document.createElement("img");
+                            songThumbnail.setAttribute("src", youtube.generateThumbnailUrl(videos.availableVideos[i].clipID));
+                            songThumbnail.setAttribute("alt", videos.availableVideos[i].clipTitle);
+                            // ------------------------------------------------ //
+                            //makes a list with just the Thumbnail (image) and Title (p)
+                            li.appendChild(songTitle);
+                            li.appendChild(songThumbnail);
+                            output.appendChild(li);
+                            // ------------------------------------------------ //
+                        }  
+                        console.log(videos.availableVideos[0]); //logs the first array on console
+                        // {clipID: "MBxghYwzdgQ", clipTitle: "ورقو الاصفر شهر ايلول", Writer: "جوزيف حرب"}
+                        // ------------------------------------------------ //
+                        //this is the "player" at the bottom of the page, this is what happens when a user clicks a video
+                        var selectedVideo = document.createElement("div");
+                        for (var i = 0, len = output.childNodes.length; i < len; i++)
+                        {
+                            //this function is called with value's argument i
+                            (function(index){
+                                output.childNodes[i].onclick = function(){
+                                    // ------------------------------------------------ //
+                                    selectedVideo.innerHTML = "";
+                                    var songInfo = document.createElement("h2");
+                                    var playVideo = document.createElement("iframe"); //allows to play the youtube video
+                                    // ------------------------------------------------ //
+                                    //shows the Title and Writer of the song (from JSON)
+                                    songInfo.innerHTML = videos.availableVideos[index].clipTitle + " " + videos.availableVideos[index].Writer;
+                                    // ------------------------------------------------ //
+                                    //reads the ID (from JSON) and inserts it in generateEmbedUrl
+                                    playVideo.setAttribute("src", youtube.generateEmbedUrl(videos.availableVideos[index].clipID));
+                                    // ------------------------------------------------ //
+                                    //reads the ID (from JSON) and inserts it in generateWatchUrl, once clicked it will play the video
+                                    playVideo.onclick = function () {
+                                        playVideo.setAttribute("src", youtube.generateWatchUrl(videos.availableVideos[index].clipID));
+                                    }
+                                    // ------------------------------------------------ //
+                                    var text = document.createElement("h2");
+                                    text.style.textDecoration="underline";
+                                    text.innerHTML = "You Are Playing This Video From: " + name.innerHTML;
+                                    // document.getElementById("youtube").appendChild(text);
+                                    // ------------------------------------------------ //
+                                    //each selected video will have its own Title and Arthor (songInfo) and a playable video (playVideo)
+                                    selectedVideo.appendChild(text);
+                                    selectedVideo.appendChild(songInfo);
+                                    selectedVideo.appendChild(playVideo);
+                                    document.getElementById("youtube").appendChild(selectedVideo); //selectedVideo will have its own div in the body called "youtube"
+                                    // ------------------------------------------------ //
+                                }    
+                            })(i);
+                        }
+                        // ------------------------------------------------ //
+                        songList.appendChild(output); //list of all the songs
+                        document.getElementById("page").appendChild(name); //displays name on page (found in JSON file)
+                        document.getElementById("page").appendChild(songList); //shows everything (except the availableVideos h1) on the page, including "youtube"
+                        // document.getElementById("page").appendChild(text);
+                        // ------------------------------------------------ //
+                    }
+                }
+                ourRequest.send();
+            }
+        }
+    </script>
+    <!-- ===================================================================================================================================== -->
+</body>
+</html>

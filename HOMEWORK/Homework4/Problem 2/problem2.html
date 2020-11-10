@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 2 - XML</title>
+    <div id="page"></div> 
+    <div id="divresults"></div>
+</head>
+<body>
+    <script>
+        /*
+            ( * _ * ) --> "Thank You For Checking Out My Code!"
+            \___|___/                         
+                |
+               / \
+              /   \
+        */
+       // ========================================================================================================== //
+        window.onload = function() {
+            displayInfo();
+        }
+        
+        function displayInfo() {
+            console.log("The form is here!");
+
+            //we get the id of the div of the page, everything on the page will show here
+            var pageDiv = document.getElementById("page");
+
+            //we first need to create a form element, so that the input fields and the button can be in it
+            var form = document.createElement("form");
+            // ---------------------------------------------------------------------------------------------- //
+            //we then create two text input fields, one for the studentID and the other for the studentName
+            //NOTE: when crying an input field, we much attach it to a form and then specify the inputs type and id
+
+            //input text field for studentID
+            var studentID = document.createElement("input");
+            studentID.type = "text";
+            studentID.placeholder = "1";
+            studentID.id = "studentID";
+            form.appendChild(document.createTextNode("ID: "));
+            form.appendChild(studentID); //we add studentID text field to the form --> ID: <input field>
+
+            //input textfield for studentName
+            var studentName = document.createElement("input");
+            studentName.type = "text";
+            studentName.placeholder = "John Doe";
+            studentName.id = "studentName";
+            form.appendChild(document.createTextNode("  Name: "));
+            form.appendChild(studentName); //we add studentName text field to the form --> Name: <input field>
+            // ---------------------------------------------------------------------------------------------- //
+            var br1 = document.createElement("br");
+            form.appendChild(br1);
+            var br2 = document.createElement("br");
+            form.appendChild(br2);
+            // ---------------------------------------------------------------------------------------------- //
+            //now we create the button that when we press, will get us the XML data
+            //NOTE: a button is an "input" element of type "button", to show text on the button use "value"
+            var button = document.createElement("input");
+            button.type = "button";
+            button.value = "Get Student Grades";
+            form.appendChild(button);
+
+            button.onclick = function() {
+                console.log("Button was clicked!");
+                var ourRequest = new XMLHttpRequest();
+                ourRequest.open('GET', "info.xml", true);
+                console.log(ourRequest);
+                // --------------------------------------- //
+                ourRequest.onload = function() {
+                    if(this.status == 200) {
+                        var studentGrades = this.responseXML; //use .responseXML to get XML data
+                        var grade = studentGrades.getElementsByTagName("student"); //since its like this <student id="1">
+                        var divResults = document.getElementById("divresults"); //this is where the results will go, located under the button
+                        console.log("The grades are being loaded!");
+                        // --------------------------------------- //
+                        //note that "student" is the parentNode, while name, exam1, exam2 and finalexam are childNodes
+                        for(var i=0; i < grade.length; i++) {
+                            //if the user write either the id or name (transformed into lowercase) and presses the button then the data will show
+                            if(grade[i].id == studentID.value || 
+                               grade[i].getElementsByTagName("name")[0].childNodes[0].nodeValue.toLowerCase() == studentName.value.toLowerCase()) {
+                                   
+                                var br3 = document.createElement("br");
+                                var br4 = document.createElement("br");
+                                var br5 = document.createElement("br");
+                                var br6 = document.createElement("br");
+
+                                divResults.innerHTML = "";
+                                var gradedTitle = document.createElement("h2");
+                                gradedTitle.innerHTML = "Grades Report";
+                                divResults.appendChild(gradedTitle); //created a text "Grades Report" and its shown under the button when its pressed
+
+                                //gets name data from the tag <name> from the XML and outputs its data
+                                divResults.appendChild(document.createTextNode("Name: "));
+                                var name = grade[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
+                                divResults.append(name); //because it is Node, we can't put it in appendChild, we can only put it in append
+                                console.log(name);
+                                divResults.appendChild(br3);
+
+                                //gets exam1 data from the tag <exam1> from the XML and outputs its data
+                                divResults.appendChild(document.createTextNode("Exam 1: "));
+                                var exam1 = grade[i].getElementsByTagName("exam1")[0].childNodes[0].nodeValue;
+                                divResults.append(exam1); //because it is Node, we can't put it in appendChild, we can only put it in append
+                                console.log(exam1);
+                                divResults.appendChild(br4);
+
+                                //gets exam2 data from the tag <exam2> from the XML and outputs its data
+                                divResults.appendChild(document.createTextNode("Exam 2: "));
+                                var exam2 = grade[i].getElementsByTagName("exam2")[0].childNodes[0].nodeValue;
+                                divResults.append(exam2); //because it is Node, we can't put it in appendChild, we can only put it in append
+                                console.log(exam2);
+                                divResults.appendChild(br5);
+
+                                //gets finalexam data from the tag <finalexam> from the XML and outputs its data
+                                divResults.appendChild(document.createTextNode("Final Exam: "));
+                                var finalexam = grade[i].getElementsByTagName("finalexam")[0].childNodes[0].nodeValue;
+                                divResults.append(finalexam); //because it is Node, we can't put it in appendChild, we can only put it in append
+                                console.log(finalexam);
+                                divResults.appendChild(br6);
+                                // --------------------------------------- //
+                                //the finals weight is located in a JSON file
+                                var weights = new XMLHttpRequest();
+                                weights.open("GET", "weights.json", true);
+                                weights.onload = function (){
+                                    if (this.status == 200){
+                                        var gradeWeights = JSON.parse(this.responseText);
+                                        console.log("Weights are being loaded!");
+                                        divResults.appendChild(document.createTextNode("Final Score: "));
+                                        var finalweight = (exam1*gradeWeights.exam1)+(exam2*gradeWeights.exam2)+(finalexam*gradeWeights.finalexam);
+                                        console.log(finalweight);
+                                        divResults.append(finalweight); //because it is Node, we can't put it in appendChild, we can only put it in append
+                                    }
+                                }
+                                weights.send();
+                                // --------------------------------------- //
+                            }
+                            pageDiv.appendChild(divResults); //adds the grade result div to the page div, meaning the results will now show on the page
+                        }
+                    }
+                }
+                ourRequest.send();
+                // --------------------------------------- //
+            }
+            pageDiv.appendChild(form); //we append the forms to the page div, the forms will the two input fields and the button
+        }
+        // ========================================================================================================== //
+    </script>
+</body>
+</html>

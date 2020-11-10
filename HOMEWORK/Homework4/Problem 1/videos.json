@@ -1,0 +1,26 @@
+{
+  "name": "Fayrouz",
+  "availableVideos":
+  [
+      {
+          "clipID":"MBxghYwzdgQ",
+          "clipTitle":"ورقو الاصفر شهر ايلول",
+          "Writer":"جوزيف حرب"
+      },
+      {
+          "clipID":"IAqQOPeDcGo",
+          "clipTitle":"احكيلي عن بلدي",
+          "Writer":"الأخوين الرحباني"
+      },
+      {
+          "clipID":"v64_oO_GyaY",
+          "clipTitle":"راجعين يا هوى",
+          "Writer":"غير معروف"
+      },
+      {
+          "clipID":"nvr4lPoKqzI",
+          "clipTitle":"كيفك إنت",
+          "Writer": "زياد الرحباني"
+      }
+  ]
+}

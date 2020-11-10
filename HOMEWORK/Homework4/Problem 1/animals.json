@@ -1,0 +1,16 @@
+{
+    "name": "Animal Videos",
+    "availableVideos":
+    [
+        {
+            "clipID":"epUk3T2Kfno",
+            "clipTitle":"Otters Holding Hands",
+            "Writer":"- Mr. Otter"
+        },
+        {
+            "clipID":"XyO3x5KAihc",
+            "clipTitle":"Duck Follows Human",
+            "Writer":"- Mr. Duck"
+        }
+    ]
+}

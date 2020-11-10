@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<students>
+    <student id="1">
+        <name>John Doe</name>
+        <exam1>76</exam1>
+        <exam2>74</exam2>
+        <finalexam>68</finalexam>
+    </student>
+    <student id="2">
+        <name>Jane Doe</name>
+        <exam1>81</exam1>
+        <exam2>82</exam2>
+        <finalexam>83</finalexam>
+    </student>
+</students>
