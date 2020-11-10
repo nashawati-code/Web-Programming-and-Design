@@ -20,6 +20,7 @@
    - [Javascript Basics](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab4)
    - [Roadster Diner](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab5)
    - [DOM Manipulation: Add, Edit, Delete](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab6)
+   - [AJAX and JQuery](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/LABS/Lab7)
 
 
 ## Homework:
@@ -39,6 +40,7 @@
     - Uses overflow hidden.
     ```
   - [Javascript Basics (detailed)](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/HOMEWORK/Homework3)
+  - [AJAX, JSON and XML](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/HOMEWORK/Homework4)
 
 ## Practice:
   - [Koala Website](https://github.com/aya-nashawati/Web-Programming-and-Design/tree/master/PRACTICE/Koala%20Website)
